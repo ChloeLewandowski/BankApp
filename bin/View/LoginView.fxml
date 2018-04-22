@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="868.0" styleClass="background" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.Login">
+   <children>
+      <AnchorPane prefHeight="650.0" prefWidth="868.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane>
+               <children>
+                  <ImageView fitHeight="650.0" fitWidth="868.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../Desktop/bankapppic.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="511.0" layoutY="123.0" opacity="0.82" prefHeight="381.0" prefWidth="342.0" style="-fx-background-color: ffff;">
+         <children>
+            <JFXTextField fx:id="ztLogin" focusColor="#a84040" layoutX="52.0" layoutY="120.0" prefHeight="25.0" prefWidth="256.0" promptText="Votre login..." />
+            <JFXPasswordField fx:id="ztPassword" focusColor="#a84040" layoutX="52.0" layoutY="166.0" prefHeight="25.0" prefWidth="256.0" promptText="Votre mot de passe..." />
+            <JFXButton fx:id="btConnexion" buttonType="RAISED" layoutX="52.0" layoutY="228.0" onAction="#handleConnexionOk" prefHeight="25.0" prefWidth="256.0" ripplerFill="#ae0808e5" style="-fx-background-color: ffff;" text="Se connecter" wrapText="true" />
+            <Label layoutX="86.0" layoutY="51.0" style="-fx-font-style: 50em;" text="Authentification" textAlignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="37.0" layoutY="579.0" text="Gestion Bancaire" textFill="#fffdfdfa">
+         <font>
+            <Font size="39.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="539.0" prefHeight="40.0" prefWidth="132.0" text="BankApp" textFill="WHITE">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

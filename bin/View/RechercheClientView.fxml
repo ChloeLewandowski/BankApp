@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="300.0" prefWidth="500.0" styleClass="background" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.RechercheClient">
+   <children>
+      <Label layoutX="7.0" styleClass="label-header" text="Interface de recherche de clients" textAlignment="CENTER" textFill="#9e137b">
+         <font>
+            <Font name="AR CARTER" size="26.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ztNomClt" layoutX="254.0" layoutY="82.0" prefHeight="24.0" prefWidth="148.0" />
+      <Button fx:id="btRecherche" layoutX="419.0" layoutY="77.0" mnemonicParsing="false" onAction="#afficherClients" text="Rechercher" />
+      <Label layoutX="149.0" layoutY="83.0" text="Nom du client:" />
+      <TableView fx:id="tabClient" layoutX="30.0" layoutY="118.0" prefHeight="168.0" prefWidth="606.0">
+        <columns>
+          <TableColumn fx:id="clNom" prefWidth="154.0" text="Nom" />
+          <TableColumn fx:id="clPrenom" prefWidth="94.0" text="Prénom" />
+            <TableColumn fx:id="clVille" prefWidth="125.0" text="Ville" />
+            <TableColumn fx:id="clNumTel" prefWidth="228.0" text="Numéro de téléphone" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
